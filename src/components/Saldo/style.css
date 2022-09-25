@@ -1,0 +1,15 @@
+.saldo {
+    display: flex;
+    height: 100px;
+    border: 1px solid #E9ECEF;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.saldo p {
+    color: #FD377E;
+}
