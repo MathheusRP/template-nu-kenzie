@@ -12,7 +12,7 @@ export const Form = ({setElement, setSaldo}) => {
     function data(event){
         event.preventDefault()
 
-        console.log(description, value, tipo)
+        // console.log(description, value, tipo)
         setElement((list) => [...list, {description: description, tipo: tipo, value: value}])
 
         if(tipo === 'Entrada'){

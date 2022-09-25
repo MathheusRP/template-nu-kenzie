@@ -12,23 +12,7 @@ export const HomePage = ({setHome}) => {
         setHome((valorAtual) => !valorAtual)
     }
 
-    const [element_list, setElement] = useState([
-        {
-            description: 'Teste',
-            tipo: 'Entrada',
-            value: 300
-        },
-        {
-            description: 'Teste',
-            tipo: 'Entrada',
-            value: 250
-        },
-        {
-            description: 'Teste',
-            tipo: 'Despesas',
-            value: 200
-        }
-    ])
+    const [element_list, setElement] = useState([])
 
 
     const [filtro, setfiltro] = useState (element_list)
@@ -60,7 +44,7 @@ export const HomePage = ({setHome}) => {
                     <Saldo saldo={saldo} />
                 </div>
                 <div>
-                    <List element_list={element_list} setFiltro={setfiltro} filtro={filtro} />
+                    <List element_list={element_list} setElement={setElement} setFiltro={setfiltro} filtro={filtro} />
                 </div>
             </section>
         </div>
