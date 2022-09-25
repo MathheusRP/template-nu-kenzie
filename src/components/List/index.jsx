@@ -26,11 +26,11 @@ export const List = ({element_list, setFiltro, filtro}) => {
         setFiltro(despesas)
     }
 
-    const excluir = (event) => {
-        if(event.target.tagName === 'BUTTON'){
-            console.log(event.target.id)
-        }
-    }
+    // const excluir = (event) => {
+    //     if(event.target.tagName === 'BUTTON'){
+    //         console.log(event.target.id)
+    //     }
+    // }
 
     return (
         <div className="list">
@@ -57,7 +57,7 @@ export const List = ({element_list, setFiltro, filtro}) => {
                                 </div>
                                 <div className="element_div2">
                                     <p>R$ {element.value}</p>
-                                    <button id={index} onClick={excluir}><BsTrash/></button>
+                                    <button id={index} ><BsTrash/></button>
                                 </div>
                             </li>
                             )

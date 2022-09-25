@@ -3,7 +3,7 @@ import { useState } from "react"
 import "./style.css"
 
 
-export const Form = ({setElement}) => {
+export const Form = ({setElement, setSaldo}) => {
 
     const [description, setDescription] = useState('')
     const [value, setValue] = useState ('')
@@ -14,7 +14,14 @@ export const Form = ({setElement}) => {
 
         console.log(description, value, tipo)
         setElement((list) => [...list, {description: description, tipo: tipo, value: value}])
-        
+
+        if(tipo === 'Entrada'){
+            setSaldo((saldo) => saldo + Number(value))
+            console.log(value)
+        } else {
+            setSaldo((saldo) => saldo - Number(value))
+            console.log(value)
+        }
     }
 
     return (

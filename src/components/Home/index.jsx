@@ -37,6 +37,8 @@ export const HomePage = ({setHome}) => {
         setfiltro(element_list)
     },[,element_list])
 
+    const [saldo, setSaldo] = useState(0)
+
     
     
 
@@ -54,8 +56,8 @@ export const HomePage = ({setHome}) => {
             </header>
             <section className="body">
                 <div>
-                    <Form setElement={setElement} />
-                    <Saldo valores={filtro} />
+                    <Form setElement={setElement} setSaldo={setSaldo} />
+                    <Saldo saldo={saldo} />
                 </div>
                 <div>
                     <List element_list={element_list} setFiltro={setfiltro} filtro={filtro} />
