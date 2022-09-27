@@ -12,7 +12,7 @@ export const HomePage = ({setHome}) => {
         setHome((valorAtual) => !valorAtual)
     }
 
-    const [element_list, setElement] = useState([])
+    const [element_list, setElement] = useState('')
 
 
     const [filtro, setfiltro] = useState (element_list)
@@ -43,7 +43,7 @@ export const HomePage = ({setHome}) => {
                     <Form setElement={setElement} setSaldo={setSaldo} />
                     <Saldo saldo={saldo} />
                 </div>
-                <div>
+                <div className="div_list">
                     <List element_list={element_list} setElement={setElement} setFiltro={setfiltro} filtro={filtro} />
                 </div>
             </section>

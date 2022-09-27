@@ -50,7 +50,9 @@ export const List = ({element_list, setElement, setFiltro, filtro}) => {
             <ul className="element_list">
                 
                 {
-                    element_list ? (
+                    filtro ? (
+                        
+                        
                         filtro.map((element, index) => {
                             return (
                                 
@@ -69,7 +71,8 @@ export const List = ({element_list, setElement, setFiltro, filtro}) => {
             
                       ) : (
 
-                        <h1>teste</h1>
+                        <h3> Você ainda não possui nenhum lançamento </h3>
+                        
                     )
 
                 }

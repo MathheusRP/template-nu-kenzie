@@ -17,10 +17,10 @@ export const Form = ({setElement, setSaldo}) => {
 
         if(tipo === 'Entrada'){
             setSaldo((saldo) => saldo + Number(value))
-            console.log(value)
+            
         } else {
             setSaldo((saldo) => saldo - Number(value))
-            console.log(value)
+            
         }
     }
 
@@ -37,21 +37,21 @@ export const Form = ({setElement, setSaldo}) => {
                 
                 <section className="input_container">
 
-                <div className="input">
-                    <label htmlFor="valor">Valor</label>
-                    <input required id="valor" type="text" placeholder="1" onChange={event => setValue(event.target.value)}/>
-                    <p>R$</p>
-                </div>
+                    <div className="input">
+                        <label htmlFor="valor">Valor </label>
+                        <input  required id="valor" type="text" placeholder="1" onChange={event => setValue(event.target.value)}/>
+                        <p>R$</p>
+                    </div>
 
-                <div className="input">
-                    <label htmlFor="tipo">Valor</label>
-                    <select required id="tipo" onChange={event => setTipo(event.target.value)}>
-                    {/* <option selected value={'Tipo'}>Tipo</option> */}
-                        <option  >Tipo</option>
-                        <option  value="Despesas">Despesas</option>
-                        <option  value="Entrada">Entrada</option>
-                    </select>
-                </div>
+                    <div className="input">
+                        <label htmlFor="tipo">Tipo</label>
+                        <select required id="tipo" onChange={event => setTipo(event.target.value)}>
+                        {/* <option selected value={'Tipo'}>Tipo</option> */}
+                            <option  >Tipo</option>
+                            <option  value="Despesas">Despesas</option>
+                            <option  value="Entrada">Entrada</option>
+                        </select>
+                    </div>
 
                 </section>
 
