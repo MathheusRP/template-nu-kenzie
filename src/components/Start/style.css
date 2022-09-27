@@ -37,11 +37,10 @@ section {
 section button {
     background-color: #FD377E;
     color: white;
-<<<<<<< HEAD
     border: 2px solid transparent;
     padding: 10px 40px;
     border-radius: 8px;
-}
+} 
 
 
 
@@ -104,8 +103,6 @@ section button {
     .imagem img {
         width: 600px;
     }
-=======
-    cursor: pointer;
->>>>>>> dbd445cb03d51290fe6179f6961e4255d681dca5
+
 }
 
